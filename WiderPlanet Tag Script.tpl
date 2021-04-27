@@ -19,6 +19,7 @@ ___INFO___
     "displayName": ""
   },
   "description": "wp_items : EventType(Item, Cart, PurchaseComplete) - Required value\nex)\nvar wp_items \u003d wp_items || [];\nwp_items.push({i:\"p_id\", t:\"p_name\", p:\"10000\", q:\"2\"});",
+  "categories": ["AFFILIATE_MARKETING", "ADVERTISING"],
   "containerContexts": [
     "WEB"
   ]
@@ -86,14 +87,14 @@ function scriptCall(EventType) {
   injectScript('https://cdn-aitg.widerplanet.com/js/wp_astg_6.0.js', function() {
     const wp_items = copyFromWindow('wp_items');
     const wpts = copyFromWindow('wpts');
-    
+
     wpts.init(data.ClientID);
-    
+
     //debug log
     //log('ClientID =', data.ClientID);
     //log('EventType =', EventType);
     //log('wp_items =', wp_items);
-    
+
     if (EventType == 'Home') {
       wpts.tag();
     } else if (EventType == 'Login' || EventType == 'Join') {
@@ -107,7 +108,7 @@ function scriptCall(EventType) {
         items: wp_items
       });
     }
-    
+
   }, function(err) {
     log('inject error:' + err);
   });
