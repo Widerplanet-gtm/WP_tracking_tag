@@ -1,0 +1,5 @@
+homepage: 'http://www.widerplanet.co.kr/'
+documentation: 'http://www.widerplanet.com/guide/gtm_guide.pptx'
+versions:
+  - sha: 41b3cbfb790036312b7ebc6505fdb153e78e0cb0
+    changeNotes: Initial release.
