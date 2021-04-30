@@ -1,5 +1,5 @@
 homepage: 'www.widerplanet.co.kr/'
-documentation: 'www.widerplanet.com/guide/gtm_guide.pptx'
+documentation: 'github.com/Widerplanet-gtm/WP_tracking_tag'
 versions:
   # Latest version
   - sha: 65e5cc016fe8714d7451059992638da5006bc330
