@@ -16,11 +16,6 @@ function scriptCall(EventType) {
     
     wpts.init(data.ClientID);
     
-    //debug log
-    //log('ClientID =', data.ClientID);
-    //log('EventType =', EventType);
-    //log('wp_items =', wp_items);
-    
     if (EventType == 'Home') {
       wpts.tag();
     } else if (EventType == 'Login' || EventType == 'Join') {
@@ -40,6 +35,5 @@ function scriptCall(EventType) {
   });
 }
 
-// 태그가 종료되는 시점에 data.gtmOnSuccess를 호출하세요.
 data.gtmOnSuccess();
 ```
